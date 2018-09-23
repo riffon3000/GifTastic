@@ -24,27 +24,26 @@
     <!-- div displaying search buttons -->
     <div class="container shadow mb-3">
         <div class="row">
-            <div class="col p-3" id="topicButtons">
-
-            </div>
+            <div class="col p-3" id="topicButtons"></div>
         </div>
     </div>
-
-
+<!-- div displaying gifs and form to create more buttons -->
     <div class="container shadow mb-3">
         <div class="row">
-
-            <!-- div displaying gifs -->
-            <div class="col p-3">
-
-            </div>
-
-            <!-- div displaying form to create more buttons -->
-            <div class="col-auto p-1">
-                <form id="topic-form">
-                    <label for="topic-input">Add a topic</label><br>
-                    <input type="text" id="topic-input"><br>
-                    <input id="addTopic" type="submit" value="Submit">
+            <!-- div housing gifs -->
+            <div class="col p-3" id="gifs"></div>
+            <!-- div housing form to create more buttons -->
+            <div class="col-auto p-5">
+                <form class="form-vertical">
+                    <div class="form-group">
+                        <label class="control-label" for="topic-input">Add a topic:</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="topic-input" placeholder="enter topic here" name="topic-input">
+                            <div class="form-group">    
+                                <button type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
