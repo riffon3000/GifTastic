@@ -17,13 +17,13 @@ function displayGifs() {
         .then(function (response) {
             var results = response.data;
             for (j = 0; j < results.length; j++) {
-                var topicsDiv = $('<a class="gifs">');
-                var p = $("<p>").text("Rating: " + results[j].rating);
+                var topicsDiv = $("<div class=\"gifs\">");
                 var gif = $("<img>").attr("src", results[j].images.fixed_height_still.url);
+                var p = $("<p>").text("Rating: " + results[j].rating);
                 gif.addClass("still");
-                topicsDiv.append(gif);  
-                topicsDiv.append(p);              
                 $("#gifs").append(topicsDiv);
+                topicsDiv.append(gif);  
+                topicsDiv.append(p);             
             }
         });
 }
