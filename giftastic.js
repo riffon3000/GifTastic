@@ -51,7 +51,7 @@ function createButtons() {
 // click event to display gifs from topic buttons
 $(document).on("click", ".topic-btn", displayGifs);
 
-//	This function works to to start/stop gif on click as well (used original instead)
+//	This function works to to start/stop gif
 $(document).on("click", "img", function () {
     var src = $(this).attr("src");
     if ($(this).hasClass('still')) {
