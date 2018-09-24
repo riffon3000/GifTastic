@@ -17,7 +17,7 @@ function displayGifs() {
         .then(function (response) {
             var results = response.data;
             for (j = 0; j < results.length; j++) {
-                var topicsDiv = $("<div class=\"gifs\">");
+                var topicsDiv = $("<div class=\"gifs p-2\">");
                 var gif = $("<img>").attr("src", results[j].images.fixed_height_still.url);
                 var p = $("<p>").text("Rating: " + results[j].rating);
                 gif.addClass("still");
