@@ -19,7 +19,7 @@ function displayGifs() {
             for (j = 0; j < results.length; j++) {
                 var topicsDiv = $("<div class=\"gifs p-2\">");
                 var gif = $("<img>").attr("src", results[j].images.fixed_height_still.url);
-                var p = $("<p>").text("Rating: " + results[j].rating);
+                var p = $("<p>").text("Rating: " + results[j].rating + " (click to animate)");
                 gif.addClass("still");
                 $("#gifs").append(topicsDiv);
                 topicsDiv.append(gif);  
