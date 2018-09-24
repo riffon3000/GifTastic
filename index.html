@@ -23,24 +23,19 @@
 
     <!-- div displaying search buttons -->
     <div class="container shadow mb-3">
+        <h4>Click Topic Button to Display Gifs</h4>
         <div class="row">
             <div class="col p-3" id="topicButtons"></div>
-        </div>
-    </div>
-<!-- div displaying gifs and form to create more buttons -->
-    <div class="container shadow mb-3">
-        <div class="row">
-            <!-- div housing gifs -->
-            <div class="col p-3" id="gifs"></div>
             <!-- div housing form to create more buttons -->
-            <div class="col-auto p-5">
+            <div class="col p-3">
                 <form class="form-vertical">
                     <div class="form-group">
                         <label class="control-label" for="topic-input">Add a topic:</label>
                         <div class="col">
-                            <input type="text" class="form-control" id="topic-input" placeholder="enter topic here" name="topic-input">
-                            <div class="form-group">    
-                                <button type="submit">Submit</button>
+                            <input type="text" class="form-control" id="topic-input" placeholder="enter topic here"
+                                name="topic-input">
+                            <div class="form-group">
+                                <button type="submit" id="addTopic">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -48,6 +43,8 @@
             </div>
         </div>
     </div>
+    <!-- div displaying gifs -->
+    <div class="container shadow mb-3 p-4" id="gifs"></div>
 
     <footer class="container-fluid shadow p-3 mb-3 relative-bottom text-center text-secondary">
         <p>Copyright &copy</p>
